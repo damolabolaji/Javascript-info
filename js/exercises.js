@@ -18,6 +18,14 @@ function camelize(str) {
   
 }
 
+//FILTER RANGE
+// function filterRange(array,num1,num2){
+//   let filterArray =  array.filter(item => (item >= num1 && item <= num2) )
+//   console.log(filterArray)
+// }
+// array = [5,3,7,8,3,6,9]
+// filterRange(array,2, 6)
+
 //FILTER RANGE IN PLACE
 function filterRangeInPlace(array,num1,num2){
 
