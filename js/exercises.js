@@ -83,3 +83,69 @@ console.log(usersMapped)
 let names = users.map(user => user.name);
 console.log(names) //['John', 'Pete', 'Mary']
 
+
+//OBJECTS
+//CHECK FOR EMPTINESS
+let user = {};
+// user.name = 'John';
+// user.surname = 'Smith'
+
+// console.log(user.name)
+
+// user.name = 'Pete'
+// console.log(user.name)
+// delete user.name
+
+// console.log(user.name)
+
+function isEmpty(obj){
+   let keyNames = Object.keys(obj);
+   if(keyNames.length === 0){
+    console.log ('true')
+   }else{
+    console.log ('false')
+   }
+}
+
+isEmpty(user);
+
+
+//SUM OBJECT PROPERTIES
+let money = {
+    John: 100,
+    Ada: 50,
+    Trix: 230,
+}
+let sum = 0
+for(key in money){
+    sum += money[key];
+}
+
+alert (sum)
+
+
+
+//MULTIPLY NUMERIC VALUES
+let menu = {
+    John: 100,
+    Ada: 50,
+    Trix: 'not allowed',
+}
+
+
+function multiplyNum(obj){
+    multiplyer = 2;
+
+    for(key in obj){
+        if(typeof obj[key] === 'number'){
+            (obj[key] * multiplyer)
+        }else{
+           (obj[key])
+        }
+    }
+
+    console.log (obj)
+  
+}
+
+multiplyNum(menu)
